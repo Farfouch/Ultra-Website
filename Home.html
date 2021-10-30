@@ -14,8 +14,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="logo.png"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -23,7 +23,7 @@
                     <li><a href="">SUPPORT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
 
@@ -34,8 +34,34 @@
         </div>
 
     </section>
+<!-------- Course ---------->
+<section class="course">
+    <h1>WHAT WE OFFER</h1>
+    <p>5DHIT MREWEL NARUTO</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>intermediate</h3>
+        </div>
+    </div>
 
 
+</section>
+
+
+
+
+
+<!--------JavaScript for toggle--------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0"
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px"
+    }
+</script>
 
 
 
